@@ -1,0 +1,12 @@
+{% extends "blog/base.html" %}
+
+<style type="text/css"></style>
+
+{%	block	content	%}
+<div class = 'div'>
+			<h1 style=" color:#06655c;"> {{	post.title	}}</h1>
+			
+			<p>{{	post.pulished_date	}}</p>
+			<p>{{	post.text|linebreaksbr	}}</p>
+		</div>
+{%	endblock	%}
